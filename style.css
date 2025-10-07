@@ -1,0 +1,110 @@
+/* --- Global Styles --- */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #F9F8F4;
+  color: #1A2942;
+  line-height: 1.6;
+}
+
+.container {
+  width: 85%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* --- Header --- */
+header {
+  background-color: #1A2942;
+  color: #F9F8F4;
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+.tagline {
+  font-style: italic;
+  color: #A43B3B;
+  margin-bottom: 1rem;
+}
+
+nav a {
+  color: #F9F8F4;
+  text-decoration: none;
+  margin: 0 0.8rem;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #A43B3B;
+}
+
+/* --- Hero Section --- */
+.hero {
+  background-color: #F9F8F4;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.hero h2 {
+  color: #1A2942;
+  margin-bottom: 1rem;
+}
+
+/* --- Case Preview --- */
+.preview {
+  background-color: #EDECEA;
+  padding: 2rem 0;
+}
+
+.preview h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #1A2942;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.card {
+  background-color: #F9F8F4;
+  border: 1px solid #DDD;
+  border-radius: 10px;
+  width: 280px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.card h4 {
+  color: #A43B3B;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #1A2942;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.card a:hover {
+  color: #A43B3B;
+}
+
+/* --- Footer --- */
+footer {
+  background-color: #1A2942;
+  color: #F9F8F4;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}
