@@ -75,6 +75,17 @@ nav a:hover {
   gap: 1rem;
 }
 
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: transform 0.2s ease;
+}
+
+.card-link:hover {
+  transform: translateY(-5px);
+}
+
 .card {
   background-color: #F9F8F4;
   border: 1px solid #DDD;
@@ -82,22 +93,69 @@ nav a:hover {
   width: 280px;
   padding: 1.5rem;
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  transition: box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.card-link:hover .card {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
 .card h4 {
   color: #A43B3B;
+  margin-bottom: 0.8rem;
 }
 
-.card a {
-  display: inline-block;
-  margin-top: 0.5rem;
+.card p {
+  color: #1A2942;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.read-more {
   color: #1A2942;
   font-weight: bold;
-  text-decoration: none;
+  font-size: 0.9rem;
 }
 
-.card a:hover {
+.card-link:hover .read-more {
   color: #A43B3B;
+}
+
+.back-link {
+  display: inline-block;
+  color: #1A2942;
+  text-decoration: none;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.back-link:hover {
+  color: #A43B3B;
+}
+
+.case-study-content {
+  background-color: #F9F8F4;
+  padding: 3rem 0;
+}
+
+.case-study-content article {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+.case-study-content h3 {
+  color: #A43B3B;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.case-study-content p {
+  color: #1A2942;
+  margin-bottom: 1.2rem;
+  text-align: justify;
 }
 
 /* --- Footer --- */
