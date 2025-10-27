@@ -24,12 +24,359 @@
   <section class="hero">
     <div class="container">
       <h2>Data Hub</h2>
-      <p>Visualizing migration trends and human rights metrics across regions. Here you’ll find charts, graphs, and key statistics supporting our case studies.</p>
+      <p>Comprehensive migration and human rights statistical catalogue. Search, filter, and explore key data points organized by region and category.</p>
+    </div>
+  </section>
+
+  <section class="data-catalog">
+    <div class="container">
+      <h3>Statistical Catalogue</h3>
+      
+      <div class="catalog-controls">
+        <div class="search-bar">
+          <input type="text" id="searchInput" placeholder="🔍 Search statistics by keyword (e.g., 'asylum', 'Denmark', 'employment')..." />
+        </div>
+        
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">All Data</button>
+          <button class="filter-btn" data-filter="eu">🇪🇺 EU</button>
+          <button class="filter-btn" data-filter="denmark">🇩🇰 Denmark</button>
+          <button class="filter-btn" data-filter="germany">🇩🇪 Germany</button>
+          <button class="filter-btn" data-filter="italy">🇮🇹 Italy</button>
+          <button class="filter-btn" data-filter="global">🌍 Global</button>
+          <button class="filter-btn" data-filter="routes">🗺️ Routes</button>
+          <button class="filter-btn" data-filter="compliance">⚖️ Compliance</button>
+          <button class="filter-btn" data-filter="integration">💡 Integration</button>
+        </div>
+      </div>
+
+      <p class="results-info" id="resultsInfo">Showing all categories</p>
+
+      <div class="data-category" data-category="eu">
+        <h4 class="category-title">🇪🇺 European Union - Overview</h4>
+        <div class="stat-grid">
+          <div class="stat-card">
+            <span class="stat-label">Total Asylum Applications (2023)</span>
+            <span class="stat-value">1,140,000</span>
+            <span class="stat-source">Eurostat, 2024</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">First-Time Asylum Applicants (2023)</span>
+            <span class="stat-value">1,064,400</span>
+            <span class="stat-source">Eurostat, 2024</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Recognition Rate (2023)</span>
+            <span class="stat-value">42%</span>
+            <span class="stat-source">EASO Annual Report</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Irregular Border Crossings (2023)</span>
+            <span class="stat-value">380,000</span>
+            <span class="stat-source">Frontex Risk Analysis</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Resettlement Pledges (2023)</span>
+            <span class="stat-value">42,500</span>
+            <span class="stat-source">UNHCR Resettlement Data</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Unaccompanied Minors (2023)</span>
+            <span class="stat-value">31,700</span>
+            <span class="stat-source">Eurostat Migration Statistics</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="data-category" data-category="denmark">
+        <h4 class="category-title">🇩🇰 Denmark - Migration & Human Rights</h4>
+        <div class="stat-grid">
+          <div class="stat-card">
+            <span class="stat-label">Asylum Applications (2023)</span>
+            <span class="stat-value">3,105</span>
+            <span class="stat-source">Danish Immigration Service</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Refugee Protection Rate (2023)</span>
+            <span class="stat-value">38%</span>
+            <span class="stat-source">DIS Annual Statistics</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Temporary Protection Visas (Ukraine)</span>
+            <span class="stat-value">38,500</span>
+            <span class="stat-source">Statistics Denmark, 2024</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Detentions in Migration Centers (2023)</span>
+            <span class="stat-value">1,240</span>
+            <span class="stat-source">Danish Refugee Council</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Family Reunification Approvals (2023)</span>
+            <span class="stat-value">2,870</span>
+            <span class="stat-source">DIS Family Reunification Report</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Average Processing Time (days)</span>
+            <span class="stat-value">187</span>
+            <span class="stat-source">Danish Immigration Service</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Returns/Deportations (2023)</span>
+            <span class="stat-value">1,890</span>
+            <span class="stat-source">Danish National Police</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Stateless Persons Registered</span>
+            <span class="stat-value">6,200</span>
+            <span class="stat-source">UNHCR Denmark</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="data-category" data-category="germany">
+        <h4 class="category-title">🇩🇪 Germany - Migration & Asylum Data</h4>
+        <div class="stat-grid">
+          <div class="stat-card">
+            <span class="stat-label">Asylum Applications (2023)</span>
+            <span class="stat-value">334,000</span>
+            <span class="stat-source">BAMF Annual Report</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Recognition Rate (2023)</span>
+            <span class="stat-value">51.9%</span>
+            <span class="stat-source">Federal Office for Migration</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Syrian Asylum Seekers (2023)</span>
+            <span class="stat-value">104,560</span>
+            <span class="stat-source">BAMF Statistics</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Afghan Asylum Seekers (2023)</span>
+            <span class="stat-value">53,970</span>
+            <span class="stat-source">BAMF Statistics</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Turkish Asylum Seekers (2023)</span>
+            <span class="stat-value">38,320</span>
+            <span class="stat-source">BAMF Statistics</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Unaccompanied Minors (2023)</span>
+            <span class="stat-value">10,800</span>
+            <span class="stat-source">Federal Statistics Office</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Ukrainian Refugees Registered</span>
+            <span class="stat-value">1,164,000</span>
+            <span class="stat-source">Federal Ministry of Interior (2024)</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Deportations (2023)</span>
+            <span class="stat-value">16,430</span>
+            <span class="stat-source">German Federal Police</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Integration Course Participants (2023)</span>
+            <span class="stat-value">187,000</span>
+            <span class="stat-source">BAMF Integration Reports</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="data-category" data-category="italy">
+        <h4 class="category-title">🇮🇹 Italy - Mediterranean Migration</h4>
+        <div class="stat-grid">
+          <div class="stat-card">
+            <span class="stat-label">Sea Arrivals (2023)</span>
+            <span class="stat-value">157,651</span>
+            <span class="stat-source">UNHCR Mediterranean Data</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Asylum Applications (2023)</span>
+            <span class="stat-value">136,000</span>
+            <span class="stat-source">Italian Ministry of Interior</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Recognition Rate (2023)</span>
+            <span class="stat-value">28%</span>
+            <span class="stat-source">Eurostat Asylum Statistics</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Deaths at Sea (2023)</span>
+            <span class="stat-value">2,498</span>
+            <span class="stat-source">IOM Missing Migrants Project</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Hotspot Capacity</span>
+            <span class="stat-value">6,000</span>
+            <span class="stat-source">Italian Red Cross Report</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Unaccompanied Minors Arrived (2023)</span>
+            <span class="stat-value">18,700</span>
+            <span class="stat-source">Save the Children Italy</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Readmissions to Libya (2023)</span>
+            <span class="stat-value">15,800</span>
+            <span class="stat-source">UNHCR Libya Update</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">NGO Rescue Operations (2023)</span>
+            <span class="stat-value">28,400</span>
+            <span class="stat-source">SOS Mediterranee Report</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="data-category" data-category="global">
+        <h4 class="category-title">📊 Global Human Rights Indicators</h4>
+        <div class="stat-grid">
+          <div class="stat-card">
+            <span class="stat-label">Forcibly Displaced Worldwide (2023)</span>
+            <span class="stat-value">110 million</span>
+            <span class="stat-source">UNHCR Global Trends</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Refugees Under UNHCR Mandate</span>
+            <span class="stat-value">36.4 million</span>
+            <span class="stat-source">UNHCR Mid-Year Report 2023</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Internally Displaced Persons</span>
+            <span class="stat-value">62.5 million</span>
+            <span class="stat-source">IDMC Global Report 2024</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Asylum Seekers Globally</span>
+            <span class="stat-value">6.9 million</span>
+            <span class="stat-source">UNHCR Statistical Database</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Stateless Persons</span>
+            <span class="stat-value">4.4 million</span>
+            <span class="stat-source">UNHCR #IBelong Campaign</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Children Displaced</span>
+            <span class="stat-value">43.3 million</span>
+            <span class="stat-source">UNICEF Refugee Report</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="data-category" data-category="routes">
+        <h4 class="category-title">🔍 Key Migration Routes - EU</h4>
+        <div class="stat-grid">
+          <div class="stat-card">
+            <span class="stat-label">Central Mediterranean Route (2023)</span>
+            <span class="stat-value">157,600</span>
+            <span class="stat-source">Frontex Annual Report</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Eastern Mediterranean Route (2023)</span>
+            <span class="stat-value">42,000</span>
+            <span class="stat-source">Frontex Annual Report</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Western Balkans Route (2023)</span>
+            <span class="stat-value">145,000</span>
+            <span class="stat-source">Frontex Annual Report</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Western Mediterranean Route (2023)</span>
+            <span class="stat-value">17,900</span>
+            <span class="stat-source">Frontex Annual Report</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Western African Route (2023)</span>
+            <span class="stat-value">39,900</span>
+            <span class="stat-source">Frontex Annual Report</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="data-category" data-category="compliance">
+        <h4 class="category-title">⚖️ Human Rights Compliance Metrics</h4>
+        <div class="stat-grid">
+          <div class="stat-card">
+            <span class="stat-label">ECHR Violations - Article 3 (2023)</span>
+            <span class="stat-value">127 cases</span>
+            <span class="stat-source">European Court of Human Rights</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Pushback Incidents Documented (2023)</span>
+            <span class="stat-value">2,180</span>
+            <span class="stat-source">Border Violence Monitoring Network</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Denmark - Immigration Detention Days</span>
+            <span class="stat-value">89,000</span>
+            <span class="stat-source">Danish Refugee Council 2023</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Germany - Rejected Dublin Claims (2023)</span>
+            <span class="stat-value">12,400</span>
+            <span class="stat-source">Pro Asyl Report</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Italy - SAR Penalties Issued</span>
+            <span class="stat-value">34</span>
+            <span class="stat-source">Amnesty International 2024</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">EU - Non-Refoulement Breaches Alleged</span>
+            <span class="stat-value">890+</span>
+            <span class="stat-source">Human Rights Watch</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="data-category" data-category="integration">
+        <h4 class="category-title">💡 Integration & Outcomes</h4>
+        <div class="stat-grid">
+          <div class="stat-card">
+            <span class="stat-label">Denmark - Refugee Employment Rate (2023)</span>
+            <span class="stat-value">52%</span>
+            <span class="stat-source">Statistics Denmark</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Germany - Refugee Employment Rate (2023)</span>
+            <span class="stat-value">49%</span>
+            <span class="stat-source">IAB Labor Market Research</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Italy - Refugee Employment Rate (2023)</span>
+            <span class="stat-value">31%</span>
+            <span class="stat-source">OECD Migration Outlook</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">EU - Language Training Access</span>
+            <span class="stat-value">68%</span>
+            <span class="stat-source">European Commission Report</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Housing Adequacy Rate - EU Avg</span>
+            <span class="stat-value">54%</span>
+            <span class="stat-source">FRA Fundamental Rights Survey</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Educational Enrollment (Refugee Children)</span>
+            <span class="stat-value">71%</span>
+            <span class="stat-source">UNHCR Education Report 2023</span>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
   <footer>
     <p>© 2025 The Migration Ledger | A student research initiative</p>
   </footer>
+
+  <script src="data-filter.js"></script>
 </body>
 </html>
