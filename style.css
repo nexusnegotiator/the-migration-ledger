@@ -1,7 +1,9 @@
 /* --- Global Styles --- */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Inter:wght@400;500;600;700&display=swap');
+
 body {
   margin: 0;
-  font-family: 'Segoe UI', Arial, sans-serif;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
   background-color: #F9F8F4;
   color: #1A2942;
   line-height: 1.6;
@@ -501,6 +503,145 @@ footer {
   .filter-btn {
     padding: 0.5rem 1rem;
     font-size: 0.85rem;
+  }
+}
+
+/* --- About Page Styles --- */
+.about-hero {
+  background-color: #F9F8F4;
+  padding: 2rem 0 1rem 0;
+  text-align: center;
+}
+
+.about-hero h2 {
+  color: #1A2942;
+  font-family: 'Merriweather', serif;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.about-tagline {
+  font-style: italic;
+  color: #555;
+  font-size: 1.1rem;
+  margin-top: 0;
+}
+
+.about-content {
+  background-color: #F9F8F4;
+  padding: 3rem 0;
+}
+
+.about-split {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.about-text h3 {
+  font-family: 'Merriweather', serif;
+  color: #1A2942;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  border-bottom: 3px solid #A43B3B;
+  padding-bottom: 0.5rem;
+}
+
+.about-text p {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 1.2rem;
+}
+
+.mission-statement {
+  margin-bottom: 2.5rem;
+}
+
+.founder-intro {
+  margin-bottom: 2.5rem;
+}
+
+.founder-name {
+  font-weight: 700;
+  color: #A43B3B;
+}
+
+.cta-box {
+  background: linear-gradient(135deg, #1A2942 0%, #2a3f5f 100%);
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.cta-box p {
+  color: #F9F8F4;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.cta-link {
+  display: inline-block;
+  background-color: #A43B3B;
+  color: #F9F8F4;
+  padding: 0.8rem 2rem;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.cta-link:hover {
+  background-color: #8a2f2f;
+  transform: translateY(-2px);
+}
+
+.about-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.globe-icon {
+  width: 100%;
+  max-width: 300px;
+}
+
+.globe-icon svg {
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 4px 10px rgba(0,0,0,0.1));
+}
+
+@media (max-width: 768px) {
+  .about-split {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .about-hero h2 {
+    font-size: 2rem;
+  }
+
+  .about-text h3 {
+    font-size: 1.3rem;
+  }
+
+  .about-text p {
+    font-size: 1rem;
+  }
+
+  .globe-icon {
+    max-width: 200px;
+  }
+
+  .about-visual {
+    padding: 1rem;
   }
 }
 
